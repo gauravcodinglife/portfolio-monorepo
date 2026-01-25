@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(183, 187, 190, 0.433);
+    font-family: "Inter"Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.links-card {
+    background-color: azure;
+    padding: 40px 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    box-sizing: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.avator{
+    width: 160px;
+    height: 160px;
+    border-radius: 55%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border: 2px solid rgb(201, 202, 210);
+    transition: transform 0.3 ease;
+}
+
+.avator:hover{
+    transform: scale(1.05);
+}
+
+.links-card h1{
+    margin: 12px 0 8px;
+    font-size: 32px;
+}
+
+.bio{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.tagline{
+    font-style: italic;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.links a  {
+    display: block;
+    background-color: #c8d7e3;
+    color: #1309ce;
+    padding: 16px;
+    margin: 14px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    transform: all 0.3s ease;
+
+}
+.links a:hover{
+    background-color: #b2ebf2;
+    color: 1309ce;
+}
+
+.links a i {
+    margin-top: 8px;
+}
+
+.footer{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #575757;
+}
