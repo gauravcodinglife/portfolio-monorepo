@@ -6,37 +6,48 @@
 <title>Gaurav Chavan | DevOps Engineer</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="bg-blur"></div>
+<div class="bg-glow"></div>
+<div class="bg-glow glow-2"></div>
 
-<nav>
-  <h1>Gaurav</h1>
-  <div>
+<nav class="nav">
+  <div class="logo">Gaurav<span>.dev</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="https://github.com/gauravcodinglife" target="_blank">GitHub</a>
-    <a href="https://medium.com/@codinggaurav85" target="_blank">Blog</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<section class="hero">
-  <img src="mypic.jpeg" class="profile-pic">
-  <h2>Cloud & DevOps Engineer</h2>
-  <p>
-    AWS-focused DevOps Engineer with hands-on experience in Kubernetes deployments,
-    CI/CD automation, Terraform infrastructure, and cloud-native architecture.
-    Currently exploring DevSecOps and cloud security automation.
-  </p>
-  <a href="https://github.com/gauravcodinglife" class="btn">View My Work</a>
+<!-- HERO -->
+<section class="hero" id="about">
+  <div class="hero-card">
+    <div class="hero-content">
+      <h1>
+        Hi, I'm <span class="gradient-text">Gaurav</span>
+      </h1>
+      <h2>Cloud & DevOps Engineer</h2>
+      <p id="typing"></p>
+      <div class="hero-buttons">
+        <a href="https://github.com/gauravcodinglife" class="btn primary" target="_blank">GitHub</a>
+        <a href="https://medium.com/@codinggaurav85" class="btn secondary" target="_blank">Blog</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="mypic.jpeg" alt="Gaurav">
+    </div>
+  </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="skills-grid">
+  <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+  <div class="grid">
     <div class="card">AWS</div>
     <div class="card">Kubernetes</div>
     <div class="card">Docker</div>
@@ -44,37 +55,78 @@
     <div class="card">Jenkins</div>
     <div class="card">CI/CD</div>
     <div class="card">Linux</div>
+    <div class="card">GitHub Actions</div>
     <div class="card">Monitoring</div>
     <div class="card">DevSecOps</div>
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
-  <h2>Projects</h2>
-  <div class="projects-grid">
+  <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
 
-    <div class="glass">
+  <div class="projects">
+
+    <div class="project-card">
       <h3>CodingWorld</h3>
       <p>
-        Cloud-native platform deployed on AWS using Kubernetes with rolling updates.
-        Built CI/CD pipelines using Jenkins and provisioned infrastructure via Terraform.
+        Cloud-native learning platform deployed on AWS using Kubernetes
+        with rolling updates. Built CI/CD pipelines using Jenkins and
+        provisioned infrastructure via Terraform.
       </p>
+      <a href="https://coding-world-final-sy61.vercel.app/" target="_blank">View Live →</a>
     </div>
 
-    <div class="glass">
+    <div class="project-card">
       <h3>InfraLens</h3>
       <p>
-        DevSecOps-focused automation platform integrating security checks into
-        deployment workflows to improve infrastructure governance.
+        DevSecOps-focused automation platform integrating security checks
+        into deployment workflows to improve infrastructure governance.
       </p>
+      <a href="https://github.com/gauravcodinglife" target="_blank">View Code →</a>
     </div>
 
   </div>
 </section>
 
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+
+  <div class="contact-card">
+    <p>Open to DevOps, Cloud, and Platform Engineering opportunities.</p>
+    <a href="mailto:codinggaurav85@gmail.com" class="btn primary">Email Me</a>
+  </div>
+</section>
+
 <footer>
-  <p>© 2026 Gaurav Chavan | DevOps Engineer</p>
+  © 2026 Gaurav Chavan — Built with ❤️ & Cloud
 </footer>
+
+<script>
+  // Typing effect
+  const text = "AWS | Kubernetes | Terraform | CI/CD | DevSecOps";
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, 80);
+    }
+  }
+  type();
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  });
+
+  document.querySelectorAll("section").forEach(sec => observer.observe(sec));
+</script>
 
 </body>
 </html>
