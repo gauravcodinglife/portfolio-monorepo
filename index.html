@@ -6,126 +6,110 @@
 <title>Gaurav Chavan | DevOps Engineer</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="bg-glow"></div>
-<div class="bg-glow glow-2"></div>
+<div class="background-gradient"></div>
 
-<nav class="nav">
-  <div class="logo">Gaurav<span>.dev</span></div>
+<nav>
+  <div class="logo">Gaurav<span>.</span></div>
   <div class="nav-links">
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
+    <a href="#skills">Stack</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="about">
-  <div class="hero-card">
-    <div class="hero-content">
-      <h1>
-        Hi, I'm <span class="gradient-text">Gaurav</span>
-      </h1>
-      <h2>Cloud & DevOps Engineer</h2>
-      <p id="typing"></p>
-      <div class="hero-buttons">
-        <a href="https://github.com/gauravcodinglife" class="btn primary" target="_blank">GitHub</a>
-        <a href="https://medium.com/@codinggaurav85" class="btn secondary" target="_blank">Blog</a>
-      </div>
+  <div class="hero-text">
+    <h1>
+      Cloud & DevOps Engineer
+    </h1>
+    <p>
+      I build scalable cloud infrastructure, automate CI/CD pipelines,
+      and design reliable Kubernetes deployments on AWS.
+      Currently exploring DevSecOps and infrastructure security automation.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="https://github.com/gauravcodinglife" target="_blank" class="btn-primary">GitHub</a>
+      <a href="https://medium.com/@codinggaurav85" target="_blank" class="btn-secondary">Technical Blog</a>
     </div>
-    <div class="hero-image">
-      <img src="mypic.jpeg" alt="Gaurav">
-    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="mypic.jpeg" alt="Gaurav">
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
-  <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
-  <div class="grid">
-    <div class="card">AWS</div>
-    <div class="card">Kubernetes</div>
-    <div class="card">Docker</div>
-    <div class="card">Terraform</div>
-    <div class="card">Jenkins</div>
-    <div class="card">CI/CD</div>
-    <div class="card">Linux</div>
-    <div class="card">GitHub Actions</div>
-    <div class="card">Monitoring</div>
-    <div class="card">DevSecOps</div>
+  <h2>Tech Stack</h2>
+  <div class="skills-grid">
+    <div class="skill-card">AWS</div>
+    <div class="skill-card">Kubernetes</div>
+    <div class="skill-card">Docker</div>
+    <div class="skill-card">Terraform</div>
+    <div class="skill-card">Jenkins</div>
+    <div class="skill-card">GitHub Actions</div>
+    <div class="skill-card">Linux</div>
+    <div class="skill-card">CI/CD</div>
+    <div class="skill-card">VPC & Networking</div>
+    <div class="skill-card">Monitoring</div>
+    <div class="skill-card">DevSecOps</div>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
-  <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+  <h2>Selected Work</h2>
 
-  <div class="projects">
-
-    <div class="project-card">
-      <h3>CodingWorld</h3>
-      <p>
-        Cloud-native learning platform deployed on AWS using Kubernetes
-        with rolling updates. Built CI/CD pipelines using Jenkins and
-        provisioned infrastructure via Terraform.
-      </p>
-      <a href="https://coding-world-final-sy61.vercel.app/" target="_blank">View Live →</a>
-    </div>
-
-    <div class="project-card">
-      <h3>InfraLens</h3>
-      <p>
-        DevSecOps-focused automation platform integrating security checks
-        into deployment workflows to improve infrastructure governance.
-      </p>
-      <a href="https://github.com/gauravcodinglife" target="_blank">View Code →</a>
-    </div>
-
+  <div class="project-card">
+    <h3>CodingWorld</h3>
+    <p>
+      Cloud-native learning platform deployed on AWS using Kubernetes.
+      Implemented rolling updates for zero downtime and automated CI/CD pipelines
+      with Jenkins. Infrastructure provisioned via Terraform.
+    </p>
   </div>
+
+  <div class="project-card">
+    <h3>InfraLens</h3>
+    <p>
+      DevSecOps automation platform integrating security validation
+      into deployment workflows to improve infrastructure governance.
+    </p>
+  </div>
+
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
-  <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
-
-  <div class="contact-card">
-    <p>Open to DevOps, Cloud, and Platform Engineering opportunities.</p>
-    <a href="mailto:codinggaurav85@gmail.com" class="btn primary">Email Me</a>
-  </div>
+  <h2>Let’s Build Something</h2>
+  <a href="mailto:codinggaurav85@gmail.com" class="btn-primary">Get in Touch</a>
 </section>
 
 <footer>
-  © 2026 Gaurav Chavan — Built with ❤️ & Cloud
+  © 2026 Gaurav Chavan
 </footer>
 
 <script>
-  // Typing effect
-  const text = "AWS | Kubernetes | Terraform | CI/CD | DevSecOps";
-  let i = 0;
-  function type() {
-    if (i < text.length) {
-      document.getElementById("typing").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(type, 80);
-    }
-  }
-  type();
-
-  // Scroll reveal
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
+document.querySelectorAll('.skill-card, .project-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / 15);
+    const rotateY = ((centerX - x) / 15);
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
   });
 
-  document.querySelectorAll("section").forEach(sec => observer.observe(sec));
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+  });
+});
 </script>
 
 </body>
