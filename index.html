@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Link in Bio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaurav Chavan | DevOps Engineer</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="links-card">
-        <img src="mypic2.jpeg" 
-        alt="potrait"
-        class="avator">
 
-        <h1>Gaurav Chavan</h1>
-        <p class="bio">Solution Architect & Content Creator</p>
-        <p class="tagline">"Code is poetry,Design is Storytelling"</p>
+<div class="bg-blur"></div>
 
-        <div class="links">
-        <a href="https://medium.com/@codinggaurav85"><i class="fab fa-Medium"></i> Youtube</a>
-        <a href="http://linkedin.com/in/gaurav-chavan-a5b23b35b"><i class="fab fa-linkedin"></i> Linkedin</a>
-        <a href="https://github.com/gauravcodinglife"><i class="fab fa-github"></i> Github</a>
-        <a href="https://www.instagram.com/m_imgaurav/"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fab fa-email"></i> Email me</a>
+<nav>
+  <h1>Gaurav</h1>
+  <div>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="https://github.com/gauravcodinglife" target="_blank">GitHub</a>
+    <a href="https://medium.com/@codinggaurav85" target="_blank">Blog</a>
+  </div>
+</nav>
 
-    <footer>
-        <p>&copy; 2025 Gaurav Chavan . All Rights Reserved</p>
-    </footer>
+<section class="hero">
+  <img src="mypic.jpeg" class="profile-pic">
+  <h2>Cloud & DevOps Engineer</h2>
+  <p>
+    AWS-focused DevOps Engineer with hands-on experience in Kubernetes deployments,
+    CI/CD automation, Terraform infrastructure, and cloud-native architecture.
+    Currently exploring DevSecOps and cloud security automation.
+  </p>
+  <a href="https://github.com/gauravcodinglife" class="btn">View My Work</a>
+</section>
 
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="card">AWS</div>
+    <div class="card">Kubernetes</div>
+    <div class="card">Docker</div>
+    <div class="card">Terraform</div>
+    <div class="card">Jenkins</div>
+    <div class="card">CI/CD</div>
+    <div class="card">Linux</div>
+    <div class="card">Monitoring</div>
+    <div class="card">DevSecOps</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="glass">
+      <h3>CodingWorld</h3>
+      <p>
+        Cloud-native platform deployed on AWS using Kubernetes with rolling updates.
+        Built CI/CD pipelines using Jenkins and provisioned infrastructure via Terraform.
+      </p>
     </div>
 
+    <div class="glass">
+      <h3>InfraLens</h3>
+      <p>
+        DevSecOps-focused automation platform integrating security checks into
+        deployment workflows to improve infrastructure governance.
+      </p>
     </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Gaurav Chavan | DevOps Engineer</p>
+</footer>
 
 </body>
 </html>
