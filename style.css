@@ -1,84 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-body{
-    background-color: rgba(183, 187, 190, 0.433);
-    font-family: "Inter"Arial,sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  background: #0f172a;
+  color: white;
+  overflow-x: hidden;
 }
 
-.links-card {
-    background-color: azure;
-    padding: 40px 50px;
-    border-radius: 20px;
-    text-align: center;
-    max-width: 500px;
-    box-sizing: 0 12px 30px rgba(0,0,0,0.1);
+/* Background Glow */
+.bg-blur {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(56,189,248,0.4), transparent 70%);
+  top: -200px;
+  right: -200px;
+  filter: blur(120px);
+  z-index: -1;
 }
 
-.avator{
-    width: 160px;
-    height: 160px;
-    border-radius: 55%;
-    object-fit: cover;
-    margin-bottom: 5px;
-    border: 2px solid rgb(201, 202, 210);
-    transition: transform 0.3 ease;
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8%;
+  align-items: center;
 }
 
-.avator:hover{
-    transform: scale(1.05);
+nav h1 {
+  font-weight: 700;
+  font-size: 24px;
 }
 
-.links-card h1{
-    margin: 12px 0 8px;
-    font-size: 32px;
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #94a3b8;
+  transition: 0.3s;
 }
 
-.bio{
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 10px;
+nav a:hover {
+  color: #38bdf8;
 }
 
-.tagline{
-    font-style: italic;
-    color: #888;
-    margin-bottom: 30px;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 8%;
 }
 
-.links a  {
-    display: block;
-    background-color: #c8d7e3;
-    color: #1309ce;
-    padding: 16px;
-    margin: 14px 0;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 17px;
-    transform: all 0.3s ease;
-
-}
-.links a:hover{
-    background-color: #b2ebf2;
-    color: 1309ce;
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 3px solid #38bdf8;
+  transition: 0.4s;
 }
 
-.links a i {
-    margin-top: 8px;
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #38bdf8;
 }
 
-.footer{
-    margin-top: 30px;
-    font-size: 14px;
-    color: #575757;
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #818cf8;
+}
+
+/* Sections */
+section {
+  padding: 80px 8%;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(56,189,248,0.2);
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+}
+
+.glass {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  transition: 0.4s;
+}
+
+.glass:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(56,189,248,0.5);
+}
+
+.glass p {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .hero h2 {
+    font-size: 28px;
+  }
 }
