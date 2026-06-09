@@ -1,116 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaurav Chavan | DevOps Engineer</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Chavan | DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="background-gradient"></div>
+  <!-- Ambient background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
 
-<nav>
-  <div class="logo">Gaurav<span>.</span></div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#skills">Stack</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<section class="hero" id="about">
-  <div class="hero-text">
-    <h1>
-      Cloud & DevOps Engineer
-    </h1>
-    <p>
-      I build scalable cloud infrastructure, automate CI/CD pipelines,
-      and design reliable Kubernetes deployments on AWS.
-      Currently exploring DevSecOps and infrastructure security automation.
-    </p>
-
-    <div class="cta-buttons">
-      <a href="https://github.com/gauravcodinglife" target="_blank" class="btn-primary">GitHub</a>
-      <a href="https://medium.com/@codinggaurav85" target="_blank" class="btn-secondary">Technical Blog</a>
+  <!-- Nav -->
+  <nav>
+    <div class="logo">
+      <span class="logo-prompt">~/</span>gaurav<span class="logo-cursor">_</span>
     </div>
-  </div>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#skills">stack</a>
+      <a href="#projects">work</a>
+      <a href="#contact">contact</a>
+    </div>
+    <div class="nav-status">
+      <span class="status-dot"></span> available
+    </div>
+  </nav>
 
-  <div class="hero-image">
-    <img src="mypic.jpeg" alt="Gaurav">
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="hero" id="about">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="tag">Cloud &amp; DevOps</span>
+        <span class="tag">AWS Certified</span>
+      </div>
+      <h1>
+        Gaurav<br>
+        <span class="h1-accent">Chavan</span>
+      </h1>
+      <p class="hero-desc">
+        I build resilient cloud infrastructure, automate CI/CD pipelines,
+        and design production-grade Kubernetes deployments on AWS.
+        Currently deep in DevSecOps and infrastructure security automation.
+      </p>
+      <div class="cta-buttons">
+        <a href="https://github.com/gauravcodinglife" target="_blank" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://medium.com/@codinggaurav85" target="_blank" class="btn-secondary">
+          Technical Blog →
+        </a>
+      </div>
 
-<section id="skills">
-  <h2>Tech Stack</h2>
-  <div class="skills-grid">
-    <div class="skill-card">AWS</div>
-    <div class="skill-card">Kubernetes</div>
-    <div class="skill-card">Docker</div>
-    <div class="skill-card">Terraform</div>
-    <div class="skill-card">Jenkins</div>
-    <div class="skill-card">GitHub Actions</div>
-    <div class="skill-card">Linux</div>
-    <div class="skill-card">CI/CD</div>
-    <div class="skill-card">VPC & Networking</div>
-    <div class="skill-card">Monitoring</div>
-    <div class="skill-card">DevSecOps</div>
-  </div>
-</section>
+      <!-- System metrics strip -->
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-val">3+</span>
+          <span class="metric-label">yrs experience</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-val">10+</span>
+          <span class="metric-label">projects shipped</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <span class="metric-val">99.9%</span>
+          <span class="metric-label">uptime target</span>
+        </div>
+      </div>
+    </div>
 
-<section id="projects">
-  <h2>Selected Work</h2>
+    <div class="hero-right">
+      <!-- Terminal card -->
+      <div class="terminal-card">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">gaurav@devops ~ </span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$</span> kubectl get nodes</p>
+          <p class="t-out">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;ROLES</p>
+          <p class="t-out t-green">node-prod-1&nbsp;&nbsp;&nbsp;Ready&nbsp;&nbsp;&nbsp;&nbsp;control-plane</p>
+          <p class="t-out t-green">node-prod-2&nbsp;&nbsp;&nbsp;Ready&nbsp;&nbsp;&nbsp;&nbsp;worker</p>
+          <p class="t-out t-green">node-prod-3&nbsp;&nbsp;&nbsp;Ready&nbsp;&nbsp;&nbsp;&nbsp;worker</p>
+          <br>
+          <p><span class="t-prompt">$</span> terraform plan</p>
+          <p class="t-out t-green">Plan: 12 to add, 0 to change, 0 to destroy.</p>
+          <br>
+          <p><span class="t-prompt">$</span> <span class="cursor-blink">▋</span></p>
+        </div>
+      </div>
 
-  <div class="project-card">
-    <h3>CodingWorld</h3>
-    <p>
-      Cloud-native learning platform deployed on AWS using Kubernetes.
-      Implemented rolling updates for zero downtime and automated CI/CD pipelines
-      with Jenkins. Infrastructure provisioned via Terraform.
-    </p>
-  </div>
+      <!-- Profile image -->
+      <div class="hero-image-wrap">
+        <div class="image-frame">
+          <img src="mypic.jpeg" alt="Gaurav Chavan">
+        </div>
+        <div class="image-badge">
+          <span class="badge-dot"></span> Open to roles
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="project-card">
-    <h3>InfraLens</h3>
-    <p>
-      DevSecOps automation platform integrating security validation
-      into deployment workflows to improve infrastructure governance.
-    </p>
-  </div>
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-tag">02 &mdash; stack</span>
+      <h2>Tools &amp; Technologies</h2>
+    </div>
 
-</section>
+    <div class="skills-groups">
+      <div class="skill-group">
+        <div class="group-label">Cloud &amp; Infra</div>
+        <div class="skill-pills">
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            AWS
+          </div>
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            VPC &amp; Networking
+          </div>
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12H3l9-9 9 9h-2M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>
+            Terraform
+          </div>
+        </div>
+      </div>
 
-<section id="contact">
-  <h2>Let’s Build Something</h2>
-  <a href="mailto:codinggaurav85@gmail.com" class="btn-primary">Get in Touch</a>
-</section>
+      <div class="skill-group">
+        <div class="group-label">Containers &amp; Orchestration</div>
+        <div class="skill-pills">
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            Kubernetes
+          </div>
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            Docker
+          </div>
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+            Linux
+          </div>
+        </div>
+      </div>
 
-<footer>
-  © 2026 Gaurav Chavan
-</footer>
+      <div class="skill-group">
+        <div class="group-label">CI/CD &amp; Automation</div>
+        <div class="skill-pills">
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Jenkins
+          </div>
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M3 12h3M18 12h3M12 3v3M12 18v3"/></svg>
+            GitHub Actions
+          </div>
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            CI/CD
+          </div>
+        </div>
+      </div>
 
-<script>
-document.querySelectorAll('.skill-card, .project-card').forEach(card => {
-  card.addEventListener('mousemove', e => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    const rotateX = ((y - centerY) / 15);
-    const rotateY = ((centerX - x) / 15);
-    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
-  });
+      <div class="skill-group">
+        <div class="group-label">Observability &amp; Security</div>
+        <div class="skill-pills">
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            DevSecOps
+          </div>
+          <div class="skill-pill">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            Monitoring
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
-  });
-});
-</script>
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-tag">03 &mdash; work</span>
+      <h2>Selected Projects</h2>
+    </div>
 
+    <div class="projects-grid">
+      <div class="project-card" data-index="01">
+        <div class="project-meta">
+          <div class="project-tags">
+            <span class="ptag">AWS</span>
+            <span class="ptag">Kubernetes</span>
+            <span class="ptag">Terraform</span>
+            <span class="ptag">Jenkins</span>
+          </div>
+          <div class="project-status">
+            <span class="status-dot green"></span> deployed
+          </div>
+        </div>
+        <h3>CodingWorld</h3>
+        <p>
+          Cloud-native learning platform on AWS with Kubernetes orchestration.
+          Implemented rolling deployments for zero-downtime releases and automated
+          end-to-end CI/CD with Jenkins. Entire infrastructure provisioned as code via Terraform —
+          reproducible, version-controlled, drift-proof.
+        </p>
+        <div class="project-footer">
+          <div class="project-stat">
+            <span>Rolling updates</span>
+            <span class="stat-highlight">0 downtime</span>
+          </div>
+          <div class="project-stat">
+            <span>Infra as code</span>
+            <span class="stat-highlight">100%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-index="02">
+        <div class="project-meta">
+          <div class="project-tags">
+            <span class="ptag">DevSecOps</span>
+            <span class="ptag">Automation</span>
+            <span class="ptag">Security</span>
+          </div>
+          <div class="project-status">
+            <span class="status-dot green"></span> active
+          </div>
+        </div>
+        <h3>InfraLens</h3>
+        <p>
+          DevSecOps automation platform that embeds security validation directly
+          into deployment workflows. Reduces manual review overhead and enforces
+          infrastructure governance policies automatically at pipeline stage — shift-left security in practice.
+        </p>
+        <div class="project-footer">
+          <div class="project-stat">
+            <span>Security gates</span>
+            <span class="stat-highlight">automated</span>
+          </div>
+          <div class="project-stat">
+            <span>Policy drift</span>
+            <span class="stat-highlight">eliminated</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-inner">
+      <span class="section-tag">04 &mdash; contact</span>
+      <h2>Let's Build Something<br><span class="h2-accent">Reliable.</span></h2>
+      <p>Open to senior DevOps, SRE, or cloud engineering roles. Also happy to chat infrastructure, pipelines, or Kubernetes war stories.</p>
+      <a href="mailto:codinggaurav85@gmail.com" class="btn-primary btn-large">
+        codinggaurav85@gmail.com →
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span class="logo-small">gaurav<span class="logo-accent">.</span></span>
+      <span class="footer-copy">© 2026 Gaurav Chavan. Built with intention.</span>
+      <div class="footer-links">
+        <a href="https://github.com/gauravcodinglife" target="_blank">GitHub</a>
+        <a href="https://medium.com/@codinggaurav85" target="_blank">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tilt effect on cards
+    document.querySelectorAll('.skill-pill, .project-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const cx = rect.width / 2;
+        const cy = rect.height / 2;
+        const rx = ((y - cy) / 18);
+        const ry = ((cx - x) / 18);
+        card.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+
+    // Scroll-based reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) el.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.project-card, .skill-group, .metrics').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
